@@ -21,6 +21,16 @@
     Strict-Transport-Security = "max-age=2592000"
     Permissions-Policy = "vibrate=(), geolocation=(), midi=(), notifications=(), push=(), microphone=(), camera=(), magnetometer=(), gyroscope=(), speaker=()"
 
+# HEADERS - No-cache for PDFs
+[[headers]]
+  for = "/*.pdf"
+  [headers.values]
+    cache-control = '''
+      max-age=0,
+      no-cache,
+      no-store,
+      must-revalidate'''
+
 # REDIRECTS
 # ##############################################################################
 
