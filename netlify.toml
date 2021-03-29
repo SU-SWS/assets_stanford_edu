@@ -20,11 +20,6 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Strict-Transport-Security = "max-age=2592000"
     Permissions-Policy = "vibrate=(), geolocation=(), midi=(), notifications=(), push=(), microphone=(), camera=(), magnetometer=(), gyroscope=(), speaker=()"
-    cache-control = '''
-      max-age=0,
-      no-cache,
-      no-store,
-      must-revalidate'''
 
 # REDIRECTS
 # ##############################################################################
@@ -33,6 +28,7 @@
   from = "/a/*"
   to = "https://a.storyblok.com/:splat"
   status = 200
+  headers={cache-control = "max-age=0, no-cache, no-store, must-revalidate"}
 
 [[redirects]]
   from = "/i/*"
