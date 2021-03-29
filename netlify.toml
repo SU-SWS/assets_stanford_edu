@@ -38,10 +38,6 @@
   from = "/a/*"
   to = "https://a.storyblok.com/:splat"
   status = 200
-  headers = {cache-control = '''max-age=0,
-      no-cache,
-      no-store,
-      must-revalidate'''}
 
 [[redirects]]
   from = "/i/*"
