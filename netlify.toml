@@ -33,3 +33,8 @@
   from = "/i/*"
   to = "https://img2.storyblok.com/:splat"
   status = 200
+
+[[redirects]]
+  from = "/p/*"
+  to = "https://private-img.storyblok.com/:splat"
+  status = 200
