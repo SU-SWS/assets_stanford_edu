@@ -33,6 +33,7 @@
   from = "/a-us/*"
   to = "https://a-us.storyblok.com/:splat"
   status = 200
+  headers = {Accept = 'image/webp'}
 
 [[redirects]]
   from = "/i/*"
