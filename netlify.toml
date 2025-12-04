@@ -28,7 +28,7 @@
   from = "/a/*"
   to = "https://a.storyblok.com/:splat"
   status = 200
- 
+
 [[redirects]]
   from = "/a-us/*"
   to = "https://a-us.storyblok.com/:splat"
@@ -42,4 +42,18 @@
 [[redirects]]
   from = "/p/*"
   to = "https://private-img.storyblok.com/:splat"
+  status = 200
+
+## CORS SAFE URLS
+# @see: https://www.storyblok.com/docs/concepts/assets.html
+# ##############################################################################
+
+[[redirects]]
+  from = "/a2/*"
+  to = "https://a2.storyblok.com/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/a2-us/*"
+  to = "https://a2-us.storyblok.com/:splat"
   status = 200
