@@ -52,8 +52,10 @@
   from = "/a2/*"
   to = "https://a2.storyblok.com/:splat"
   status = 200
+  headers = { "Access-Control-Allow-Origin" = "*" }
 
 [[redirects]]
   from = "/a2-us/*"
   to = "https://a2-us.storyblok.com/:splat"
   status = 200
+  headers = { "Access-Control-Allow-Origin" = "*" }
