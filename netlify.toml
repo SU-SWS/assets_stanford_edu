@@ -52,10 +52,10 @@
   from = "/a2/*"
   to = "https://a2.storyblok.com/:splat"
   status = 200
-  headers = { "Access-Control-Allow-Origin" = "*" }
+  headers = { "Access-Control-Allow-Origin" = "*","Cache-Control" = "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0","CDN-Cache-Control" = "no-store","Netlify-CDN-Cache-Control" = "no-store","Netlify-Vary" = "query","Surrogate-Control" = "no-store" }
 
 [[redirects]]
   from = "/a2-us/*"
   to = "https://a2-us.storyblok.com/:splat"
   status = 200
-  headers = { "Access-Control-Allow-Origin" = "*" }
+  headers = { "Access-Control-Allow-Origin" = "*","Cache-Control" = "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0","CDN-Cache-Control" = "no-store","Netlify-CDN-Cache-Control" = "no-store","Netlify-Vary" = "query","Surrogate-Control" = "no-store" }
